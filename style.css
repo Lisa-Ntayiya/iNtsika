@@ -1,0 +1,235 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.tech-header
+{
+  font-size: 20px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.tech-paragraph
+{
+  font-size: 15px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+body{
+  font-family: "SF Pro Text","Myriad Set Pro","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+/*
+  font-family: Arial, Helvetica, sans-serif; */
+  background: #fff;
+  color:#fff;
+  line-height: 1.6;
+  height: 100vh;
+  /* overflow: hidden; This hide the scroll bar */
+}
+html {
+  scroll-behavior: smooth;
+}
+.box-container h1
+{
+  font-size: 80px;
+  color: #e1e1e11a;
+  background-image: url("C://Users//User//Documents//SMS//intsika.jpeg");
+  background-repeat: repeat-x;
+  -webkit-background-clip: text;
+  animation: animate 15s linear infinite;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0);
+}
+
+@keyframes animate
+{
+  0%{
+    background-position: left 0px top 10px;
+  }
+  40%{
+    background-position: left 800px top 10px;
+  }
+}
+
+/* Styling the NavBar */
+.navbar{
+  position: fixed;  /*It's must be fixed always on  top*/
+  top: 0; /* This  let the navbar */
+  z-index: 1; /* This is always on top of the rest of the Content*/
+  display: flex;
+  width: 100%;
+  height: 60px;
+  background: transparent;
+}
+
+.navbar ul
+{
+  display: flex;
+  list-style:  none;
+  width: 100%;
+  justify-content:  center;
+}
+.navbar ul li{
+  margin: 0 1rem;
+  font-family: "Nunito";/*"Nunito",Arial,"Helvetica Neue",Helvetica,serif,sans-serif;*/
+  font-size: 15px;
+  font-weight: bold;
+  padding: 1rem;
+}
+
+.navbar ul a{
+  text-decoration: none;
+  /* text-transform: uppercase; */
+  color: rgb(180, 175, 175);
+}
+
+.navbar ul li a:hover
+{
+  color:  rgb(0, 0, 0);
+}
+
+section {
+display: flex;
+flex-direction:  column;
+ align-items: center;
+ justify-content: center;
+ text-align: center;
+ width: 100%;
+ height: 100vh;
+ scroll-snap-align: center;
+}
+
+section h1{
+font-size:  5rem;
+color: #fff;
+}
+
+section p {
+ font-size:  1.5rem;
+}
+
+/* Section Images */
+section#home
+{
+  background: url('') no-repeat center center/cover;
+}
+
+section#about
+{
+  background: url('') no-repeat center center/cover;
+}
+
+
+section#services {
+  background: url('') no-repeat center center/cover;
+}
+
+section#contact {
+  background: url('') no-repeat center center/cover;
+}
+
+section#industry {
+  background: url('') no-repeat center center/cover;
+}
+
+section#team
+{
+  background: url('') no-repeat center center/cover;
+}
+.navbar-brand-logo{
+  width: 17.7rem;
+  height: 17.7rem;
+  border-radius: 110rem;
+
+}
+/*The position  of the team */
+.team
+{
+  outline: none;
+  border: solid #000000a8;
+  font-size: 5rem;
+  font-family: 'Arvo', cursive;
+  line-height: 2;
+  font-weight: 900;
+  color: rgb(255, 255, 255);
+  text-shadow: 3px 0 #DBEDF3;
+  border-radius: 15px;
+  display: inline-block;
+  width: 280px;
+  height: 320px;
+  text-align: center;
+  margin: 10px;
+  background-color: white;
+}
+/* End of the positioning */
+.team-image {
+  background-size: 100%;
+  position: center;
+  border-radius: 50%;
+  margin: 10px 30px;
+  margin-top: 40px;
+}
+
+.cv{
+
+  line-height: 2px;
+  display: inline-block;
+  text-align: 1px;
+  margin: 10px;
+  padding: 1px;
+
+}
+.text-header
+{
+  color: #c5d6f5;
+  font-family: Perpetua;
+}
+ul.breadcrumb {
+  padding: 10px 16px;
+  list-style: none;
+  background-color: rgba(0, 0, 0, 0.986);
+  opacity: 0.8;
+}
+ul.breadcrumb li {
+  display: inline;
+  font-family: Perpetua;
+  font-size: 20px;
+}
+ul.breadcrumb li+li:before {
+  padding: 8px;
+  color: rgba(184, 182, 181, 0.596);
+  content: ">\00a0";
+}
+ul.breadcrumb li a {
+  color: #c5d6f5;
+  text-decoration: none;
+}
+ul.breadcrumb li a:hover {
+  color: #6e9ff8;
+  text-decoration: underline;
+}
+.carousel-design
+{
+  width: 1200px;
+  height: 390px;
+  background-color: rgba(0, 0, 0, 0.986);
+  opacity: 0.8;
+}
+.carousel-item h2
+{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 30px;
+  background-image: url("C://Users//User//Documents//SMS//intsika.jpeg");
+  background-repeat: repeat-x;
+  -webkit-background-clip: text;
+  animation: animate 60s linear infinite;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0);
+}
+.box{position:relative;}
+.box .box-content,.box:after{position:absolute;transition:all .5s ease 0s}
+.box:after{content:"";width:200px; border-radius: 15px; height:290px; background:rgba(0, 0, 0, 0.8);padding-bottom:65%;opacity:0;top:50%;left:50%;transform:rotate(0) translate(-50%,-50%);transform-origin:0 0 0}
+.box:hover:after{transform:rotate(0deg) translate(-50%,-50%);opacity:1}
+.box img{width:220px;height:300px}
+.box .box-content{width:180px;height:300px; top:40%;left:11%;opacity:0;z-index:1}
+.box:hover .box-content{opacity:1}
+.box .title{padding:10px 0;color:rgb(255, 255, 255);margin:0;border-top:2px solid #fff;font-size: 20px;border-bottom:2px solid #fff}
+.box .icon{padding:0;margin:12px 0 0;list-style-type:none}
+.box .icon li a{float: left; display:block;margin-bottom:5px;width:30px;height:30px;line-height:35px;border-radius:50%;border:1px solid #fff;font-size:12px;color:#fff;margin-right:2px;transition:all .5s ease 0s}
+.box .icon li a:hover{border-radius:0}
+.box .post{display:block;font-size:13px;color:rgb(255, 255, 255);margin-bottom:20px}
+@media only screen and (max-width:990px){.box{margin-bottom:20px}}
